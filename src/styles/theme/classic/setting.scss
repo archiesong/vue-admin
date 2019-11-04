@@ -1,0 +1,39 @@
+$theme-name: 'Classic';
+
+// sidebar
+$menuText:rgba(255,255,255,.7);
+$menuActiveText:rgba(255,255,255,1);
+$MenuActive:#1890ff;
+$subMenuActiveText:rgba(255,255,255,1);
+$logoBg:rgba(32, 34, 42,1);
+$logoText:rgba(255, 255, 255,0.8);
+$headerBg:rgba(255, 255, 255,1);
+$headerText:rgba(51, 51, 51,1);
+$menuBg: rgba(32,34,42,1);
+$menuHover: none;
+$menuHoverText:#fff;
+$subMenuBg:rgba(0,0,0,.3);
+$subMenuHover: none;
+$subMenuHoverText: #fff;
+$mainBg: rgba(240, 242, 245,1);
+$sideBarWidth: 256px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  MenuActive: $MenuActive;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  logoBg:$logoBg;
+  logoText:$logoText;
+  headerBg:$headerBg;
+  headerText:$headerText;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  subMenuHoverText:$subMenuHoverText;
+  mainBg:$mainBg;
+  sideBarWidth: $sideBarWidth;
+}
